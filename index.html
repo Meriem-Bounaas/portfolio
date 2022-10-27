@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="./fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="./fontawesome-free-6.2.0-web/css/all.css" rel="stylesheet">
+    <link href="./fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="flex flex-row justify-between p-2 bg-firstColor fixed w-full opacity-95">
+            <img src="./media/logo.png" alt="logo" class="w-7" />
+            <div class="navbar-container container">
+                <input type="checkbox" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#about" class="capitalize">about</a></li>
+                        <li><a href="#portfolio" class="capitalize">portfolio</a></li>
+                        <li><a href="#experience" class="capitalize">experience</a></li>
+                        <li><a href="#contact" class="capitalize">contact me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex flex-col">
+        <section class="bg-firstColor p-2 h-screen justify-center items-center flex flex-col gap-3">
+                <div class="flex flex-row px-7">
+                    <div class="w-1/2">
+                        <p class="capitalize"><span class="text-forthColor">i'm</span> <span
+                                class="text-thirdColor font-semibold text-lg">ivan dan</span></p>
+                        <p class="capitalize text-forthColor text-base"> python developper & erpNext consultant</p>
+                    </div>  
+                    <div class=""><img  alt="img" /></div>
+                </div>
+                <div class="flex flex-row gap-3 text-forthColor items-baseline justify-center">
+                    <hr class="text-thirdColor w-12" />
+                    <i class="fa-brands fa-twitter fa-xl"></i>
+                    <i class="fa-brands fa-whatsapp fa-xl"></i>
+                    <i class="fa-brands fa-linkedin-in fa-xl"></i>
+                    <i class="fa-brands fa-github fa-xl"></i>
+                    <hr class="text-thirdColor w-12" />
+                </div>
+        </section>
+
+        <section class="bg-secondColor p-2 h-screen pt-10">
+            <div class="flex flex-row justify-center items-baseline gap-2 mb-3">
+                <hr class="text-forthColor w-12" />
+                <h1 class="capitalize text-3xl text-thirdColor">about</h1>
+                <hr class="text-forthColor w-12" />
+            </div>
+            <p class="text-fifthColor px-7 text-justify text-sm">
+                Radhika Sanghani is an award-winning features journalist and influential body positivity campaigner. She
+                writes regularly for the Daily Telegraph, Daily Mail, Elle, Guardian, Grazia, Glamour and Cosmopolitan;
+               
+            </p>
+            <h1 class="capitalize text-3xl text-forthColor text-center mb-3 mt-3">my skills</h1>
+            <div class="grid grid-cols-3 px-7 gap-3 py-3">
+                <div class="h-20 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2">
+                    <div class="w-10"><img src="./media/react.png" /></div>
+                    <span class="capitalize text-forthColor">react</span>
+                </div>
+                <div class="h-20 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2 ">
+                    <div class="w-10"><img src="./media/redux.png" /></div>
+                    <span class="capitalize text-forthColor">redux</span>
+                </div>
+                <div class="h-20 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2 ">
+                    <div class="w-10"><img src="./media/js.png" /></div>
+                    <span class="capitalize text-forthColor">javaScript</span>
+                </div>
+                <div class="h-20 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2 ">
+                    <div class="w-10"><img src="./media/tailwind.png" /></div>
+                    <span class="capitalize text-forthColor">tailwind</span>
+                </div>
+                <div class="h-20 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2 ">
+                    <div class="w-10"><img src="./media/git.png" /></div>
+                    <span class="capitalize text-forthColor">git</span>
+                </div>
+                <div class="h-20 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2 ">
+                    <div class="w-10"><img src="./media/sass.png" /></div>
+                    <span class="capitalize text-forthColor">scss</span>
+                </div>
+                <div class="h-20 bg-sixthColor self-center flex rounded-md flex-col items-center justify-between p-2 col-start-0.5 col-end-2 ">
+                    <div class="w-10"><img src="./media/css.png" /></div>
+                    <span class="capitalize text-forthColor">css</span>
+                </div>
+                <div class="h-20 bg-sixthColor self-center flex rounded-md flex-col items-center justify-between p-2 ">
+                    <div class="w-10"><img src="./media/html.png" /></div>
+                    <span class="capitalize text-forthColor">html</span>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="portfolio" class="bg-firstColor p-2 h-screen gap-4 flex flex-col pt-10">
+                <h1 class="capitalize text-3xl text-forthColor text-center mt-3">portfolio</h1>
+                <div class="grid grid-cols-2 px-7 gap-3">
+                    <img src="./media/img1.png" />
+                    <img src="./media/img2.png" />
+                    <img src="./media/img3.png" />
+                    <img src="./media/img4.png" />
+                    <img src="./media/img5.png" />
+                    <img src="./media/img6.png" />
+                </div>
+                <button class="p-2 bg-thirdColor rounded-lg mx-auto capitalize font-semibold mt-5">view more</button>
+        </section>
+
+        <section class="bg-secondColor p-2 h-screen pt-10">
+                <h1 class="capitalize text-3xl text-forthColor text-center mt-3">experience</h1>
+                <div class="flex flex-col items-center mt-3 gap-3">
+                    <div class="flex flex-row gap-5">
+                        <div class="text-thirdColor"><i class="fa-sharp fa-solid fa-circle"></i></div>
+                        <h2 class="text-forthColor text-xl">first experience</h2>
+                    </div>
+                    <div class="flex flex-row gap-5">
+                        <div class="text-thirdColor"><i class="fa-sharp fa-solid fa-circle"></i></div>
+                        <h2 class="text-forthColor text-xl">second experience</h2>
+                    </div>
+                    <div class="flex flex-row gap-5">
+                        <div class="text-thirdColor"><i class="fa-sharp fa-solid fa-circle"></i></div>
+                        <h2 class="text-forthColor text-xl">third experience</h2>
+                    </div>
+                </div>
+        </section>
+
+        <section class="bg-firstColor p-2 h-screen justify-center flex flex-col">
+            <h1 class="capitalize text-3xl text-forthColor text-center mt-3">contact me</h1>
+
+            <div class="flex flex-col items-center gap-3 mt-10">
+                <div class="bg-sixthColor flex flex-row gap-4 w-2/3 rounded-md h-fit p-2">
+                    <div class="text-forthColor"><i class="fa-regular fa-envelope"></i></i></div>
+                    <p class="text-thirdColor text-sm">bouunaas.meriem.1993@gmail.com</p>
+                </div>
+                <div class="bg-sixthColor flex flex-row gap-4 w-2/3 rounded-md h-fit p-2">
+                    <div class="text-forthColor"><i class="fa-solid fa-phone"></i></i></div>
+                    <p class="text-thirdColor">(+33) 744 158 690</p>
+                </div>
+                <div class="bg-sixthColor flex flex-row gap-4 w-2/3 rounded-md h-fit p-2">
+                    <div class="text-forthColor"><i class="fa-solid fa-location-dot"></i></div>
+                    <p class="text-thirdColor">grenoble_france</p>
+                </div>
+            </div>
+            <div class="flex flex-row items-baseline mt-12 justify-center ">
+                <hr class="text-forthColor w-full" />
+                <div class="flex flex-row  text-forthColor gap-5 ">
+                    <i class="fa-brands fa-twitter fa-xl"></i>
+                    <i class="fa-brands fa-whatsapp fa-xl"></i>
+                    <i class="fa-brands fa-linkedin-in fa-xl"></i>
+                    <i class="fa-brands fa-github fa-xl"></i>
+                </div>
+                <hr class="text-forthColor w-full" />
+            </div>
+            <footer class="bg-firstColor">
+                <h2 class="text-fifthColor text-center p-3 text-sm">copyright</h2>
+            </footer>
+        </section>
+
+    </main>
+   
+
+    <script src="index.js"></script>
+</body>
+
+</html>
