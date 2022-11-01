@@ -10,15 +10,22 @@
     <link href="./fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet">
     <link href="./fontawesome-free-6.2.0-web/css/all.css" rel="stylesheet">
     <link href="./fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
 
 </head>
 
-<body>
+<body class="font-font-text bg-secondColor">
     <header>
-        <nav class="flex flex-row justify-between p-2 bg-firstColor fixed w-full opacity-95">
-            <img src="./media/logo.png" alt="logo" class="w-7" />
-            <div class="navbar-container container">
-                <input type="checkbox" />
+        <nav
+            class="flex flex-row z-10 justify-between px-4 py-2 bg-firstColor fixed w-full opacity-95 md:h-14 md:fixed md:z-10 md:opacity-95 md:items-center">
+            <a href="#home"><img src="./media/logo.png" alt="logo" class="w-7" /></a>
+            <div class="navbar-container container block md:hidden">
+                <input type="checkbox" id="my-check-box" />
                 <div class="hamburger-lines">
                     <span class="line line1"></span>
                     <span class="line line2"></span>
@@ -26,150 +33,340 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="#about" class="capitalize">about</a></li>
-                        <li><a href="#portfolio" class="capitalize">portfolio</a></li>
-                        <li><a href="#experience" class="capitalize">experience</a></li>
-                        <li><a href="#contact" class="capitalize">contact me</a></li>
+                        <li><a href="#home" class="capitalize menu-item font-title-font text-2xl">home</a></li>
+                        <li><a href="#about" class="capitalize menu-item font-title-font text-2xl">about</a></li>
+                        <li><a href="#portfolio" class="capitalize menu-item font-title-font text-2xl">portfolio</a></li>
+                        <li><a href="#experience" class="capitalize menu-item font-title-font text-2xl">experience</a></li>
+                        <li><a href="#contact" class="capitalize menu-item font-title-font text-2xl">contact me</a></li>
                     </ul>
                 </div>
+            </div>
+            <div class="hidden lg:block w-full md:block">
+                <ul class="my-text-shadow flex flex-row text-forthColor justify-center text-xl items-center md:gap-10">
+                    <li class="hover:text-thirdColor"><a href="#home" class="capitalize">home</a></li>
+                    <li class="hover:text-thirdColor"><a href="#about" class="capitalize">about</a></li>
+                    <li class="hover:text-thirdColor"><a href="#portfolio" class="capitalize">portfolio</a></li>
+                    <li class="hover:text-thirdColor"><a href="#experience" class="capitalize">experience</a></li>
+                    <li class="hover:text-thirdColor lg:hidden md:block">
+                        <a href="#contact" class="capitalize">contact</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
 
     <main class="flex flex-col">
-        <section class="bg-firstColor p-2 h-screen justify-center items-center flex flex-col gap-3">
-                <div class="flex flex-row px-7">
-                    <div class="w-1/2">
-                        <p class="capitalize"><span class="text-forthColor">i'm</span> <span
-                                class="text-thirdColor font-semibold text-lg">ivan dan</span></p>
-                        <p class="capitalize text-forthColor text-base"> python developper & erpNext consultant</p>
-                    </div>  
-                    <div class=""><img  alt="img" /></div>
+        <section id="home" class="bg-firstColor px-2 h-screen justify-center items-center flex flex-col gap-3">
+            <div class="flex flex-row px-7">
+                <div
+                    class=" absolute top-40 left-12 lg:top-52 lg:left-56 lg:absolute md:absolute md:top-32 md:left-60 lg:z-10">
+                    <p class="text-forthColor text-4xl text-center capitalize pb-4">hi ,</p>
+                    <p class="text-forthColor text-3xl capitalize lg:text-4xl md:text-3xl">i'm
+                        <span
+                            class="my-text-shadow text-thirdColor font-semibold text-3xl capitalize lg:text-5xl md:text-4xl">
+                            meriem bounaas
+                        </span>
+                    </p>
+                    <p
+                        class="capitalize text-forthColor text-2xl text-center pt-5 lg:text-5xl lg:mb-10 md:text-4xl md:mb-10">
+                        front end developper
+                    </p>
+                    <button
+                        class="hidden lg:block lg:bg-thirdColor lg:p-2 lg:rounded-md md:hidden lg:mx-auto md:mx-auto lg:hover:bg-sixthColor lg:hover:text-thirdColor lg:hover:border-2 lg:hover:border-thirdColor md:hover:bg-sixthColor md:hover:text-thirdColor md:hover:border-2 md:hover:border-thirdColor">
+                        <a href="#contact" class="capitalize font-title-font text-lg">contact me</a>
+                    </button>
                 </div>
-                <div class="flex flex-row gap-3 text-forthColor items-baseline justify-center">
-                    <hr class="text-thirdColor w-12" />
-                    <i class="fa-brands fa-twitter fa-xl"></i>
-                    <i class="fa-brands fa-whatsapp fa-xl"></i>
-                    <i class="fa-brands fa-linkedin-in fa-xl"></i>
-                    <i class="fa-brands fa-github fa-xl"></i>
-                    <hr class="text-thirdColor w-12" />
+                <div class="absolute bottom-0 left-0 lg:left-auto lg:bottom-0 lg:w-1/2 md:w-1/2 md:left-60">
+                    <!-- <img src="./media/person1.png" alt="img" /> -->
                 </div>
+
+            </div>
+            <div
+                class="flex flex-col gap-14 lg:items-center md:items-center lg:absolute lg:bottom-56 lg:w-fit lg:left-80 md:gap-1 right-0 pr-5 bottom-28 absolute text-forthColor md:flex-row md:w-full md:absolute md:bottom-5 ">
+                <hr class="text-thirdColor w-14 rotate-90 lg:block lg:w-12 md:rotate-0 md:w-full" />
+                <div class="flex flex-col text-forthColor lg:gap-6 md:gap-5 gap-10 px-3 lg:flex-row md:flex-row ">
+                    <a href="https://twitter.com/MeriemBou93">
+                        <i class="fa-brands fa-twitter fa-xl hover:text-thirdColor cursor-pointer "></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/meriem-bounaas-a84171243/">
+                        <i class="fa-brands fa-linkedin-in fa-xl hover:text-thirdColor cursor-pointer "></i>
+                    </a>
+                    <a href="https://github.com/Meriem-Bounaas">
+                        <i class="fa-brands fa-github fa-xl hover:text-thirdColor cursor-pointer "></i>
+                    </a>
+                </div>
+                <hr class="lg:text-thirdColor lg:block lg:w-12 md:block md:text-thirdColor md:w-full hidden" />
+            </div>
         </section>
 
-        <section class="bg-secondColor p-2 h-screen pt-10">
+        <section id="about" class="bg-secondColor px-2 h-screen py-10 lg:pt-20 md:pt-20">
             <div class="flex flex-row justify-center items-baseline gap-2 mb-3">
-                <hr class="text-forthColor w-12" />
-                <h1 class="capitalize text-3xl text-thirdColor">about</h1>
-                <hr class="text-forthColor w-12" />
+                <hr class="text-thirdColor w-12" />
+                <h1 class="my-text-shadow capitalize text-3xl text-thirdColor font-title-font lg:text-5xl">about</h1>
+                <hr class="text-thirdColor w-12" />
             </div>
-            <p class="text-fifthColor px-7 text-justify text-sm">
+            <p class="text-fifthColor px-7 text-justify text-sm lg:text-2xl lg:px-36">
                 Radhika Sanghani is an award-winning features journalist and influential body positivity campaigner. She
                 writes regularly for the Daily Telegraph, Daily Mail, Elle, Guardian, Grazia, Glamour and Cosmopolitan;
-               
+
             </p>
-            <h1 class="capitalize text-3xl text-forthColor text-center mb-3 mt-3">my skills</h1>
-            <div class="grid grid-cols-3 px-7 gap-3 py-3">
-                <div class="h-20 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2">
-                    <div class="w-10"><img src="./media/react.png" /></div>
-                    <span class="capitalize text-forthColor">react</span>
+            <h1 class="my-text-shadow capitalize text-3xl text-thirdColor text-center mb-5 mt-10 font-title-font">
+                my skills
+            </h1>
+            <div class="px-7 py-3 flex flex-col lg:gap-10 gap-3">
+                <div class="lg:flex lg:flex-row lg:gap-10 lg:justify-center grid grid-cols-2 gap-3 ">
+                    <div
+                        class="h-25 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2 lg:h-36 lg:w-36">
+                        <div class="w-10 lg:w-20"><img src="./media/js.png" /></div>
+                        <span class="capitalize text-forthColor lg:text-xl">javaScript</span>
+                    </div>
+                    <div
+                        class="h-25 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2 lg:h-36 lg:w-36">
+                        <div class="w-10 lg:w-20"><img src="./media/react.png" /></div>
+                        <span class="capitalize text-forthColor lg:text-xl">react</span>
+                    </div>
+                    <div
+                        class="h-25 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2 lg:h-36 lg:w-36">
+                        <div class="w-10 lg:w-20"><img src="./media/redux.png" /></div>
+                        <span class="capitalize text-forthColor lg:text-xl">redux</span>
+                    </div>
+                    <div
+                        class="h-25 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2 lg:h-36 lg:w-36">
+                        <div class="w-10 lg:w-20"><img src="./media/git.png" /></div>
+                        <span class="capitalize text-forthColor lg:text-xl">git</span>
+                    </div>
+                    <div
+                        class="h-20 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2 lg:h-36 lg:w-36">
+                        <div class="w-10 lg:w-20"><img src="./media/html.png" /></div>
+                        <span class="capitalize text-forthColor lg:text-xl">html</span>
+                    </div>
+                    <div
+                        class="h-25 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2 lg:h-36 lg:w-36 lg:hidden">
+                        <div class="w-10 lg:w-20"><img src="./media/sass.png" /></div>
+                        <span class="capitalize text-forthColor lg:text-xl">scss</span>
+                    </div>
                 </div>
-                <div class="h-20 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2 ">
-                    <div class="w-10"><img src="./media/redux.png" /></div>
-                    <span class="capitalize text-forthColor">redux</span>
+                <div class="gap-3 lg:flex lg:flex-row lg:justify-center lg:gap-10  grid grid-cols-2">
+                    <div
+                        class="hidden lg:h-25 lg:bg-sixthColor lg:flex lg:rounded-md lg:flex-col lg:items-center lg:justify-between lg:p-2 lg:h-36 lg:w-36">
+                        <div class="w-10 lg:w-20"><img src="./media/sass.png" /></div>
+                        <span class="capitalize text-forthColor lg:text-xl">scss</span>
+                    </div>
+                    <div
+                        class="h-20 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2 lg:h-36 lg:w-36">
+                        <div class="w-10 lg:w-20"><img src="./media/css.png" /></div>
+                        <span class="capitalize text-forthColor lg:text-xl">css</span>
+                    </div>
+
+                    <div
+                        class="h-25 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2 lg:h-36 lg:w-36">
+                        <div class="w-10 lg:w-20"><img src="./media/tailwind.png" /></div>
+                        <span class="capitalize text-forthColor lg:text-xl">tailwind</span>
+                    </div>
                 </div>
-                <div class="h-20 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2 ">
-                    <div class="w-10"><img src="./media/js.png" /></div>
-                    <span class="capitalize text-forthColor">javaScript</span>
-                </div>
-                <div class="h-20 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2 ">
-                    <div class="w-10"><img src="./media/tailwind.png" /></div>
-                    <span class="capitalize text-forthColor">tailwind</span>
-                </div>
-                <div class="h-20 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2 ">
-                    <div class="w-10"><img src="./media/git.png" /></div>
-                    <span class="capitalize text-forthColor">git</span>
-                </div>
-                <div class="h-20 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2 ">
-                    <div class="w-10"><img src="./media/sass.png" /></div>
-                    <span class="capitalize text-forthColor">scss</span>
-                </div>
-                <div class="h-20 bg-sixthColor self-center flex rounded-md flex-col items-center justify-between p-2 col-start-0.5 col-end-2 ">
-                    <div class="w-10"><img src="./media/css.png" /></div>
-                    <span class="capitalize text-forthColor">css</span>
-                </div>
-                <div class="h-20 bg-sixthColor self-center flex rounded-md flex-col items-center justify-between p-2 ">
-                    <div class="w-10"><img src="./media/html.png" /></div>
-                    <span class="capitalize text-forthColor">html</span>
-                </div>
+
             </div>
 
         </section>
 
-        <section id="portfolio" class="bg-firstColor p-2 h-screen gap-4 flex flex-col pt-10">
-                <h1 class="capitalize text-3xl text-forthColor text-center mt-3">portfolio</h1>
-                <div class="grid grid-cols-2 px-7 gap-3">
-                    <img src="./media/img1.png" />
-                    <img src="./media/img2.png" />
-                    <img src="./media/img3.png" />
-                    <img src="./media/img4.png" />
-                    <img src="./media/img5.png" />
-                    <img src="./media/img6.png" />
-                </div>
-                <button class="p-2 bg-thirdColor rounded-lg mx-auto capitalize font-semibold mt-5">view more</button>
-        </section>
-
-        <section class="bg-secondColor p-2 h-screen pt-10">
-                <h1 class="capitalize text-3xl text-forthColor text-center mt-3">experience</h1>
-                <div class="flex flex-col items-center mt-3 gap-3">
-                    <div class="flex flex-row gap-5">
-                        <div class="text-thirdColor"><i class="fa-sharp fa-solid fa-circle"></i></div>
-                        <h2 class="text-forthColor text-xl">first experience</h2>
-                    </div>
-                    <div class="flex flex-row gap-5">
-                        <div class="text-thirdColor"><i class="fa-sharp fa-solid fa-circle"></i></div>
-                        <h2 class="text-forthColor text-xl">second experience</h2>
-                    </div>
-                    <div class="flex flex-row gap-5">
-                        <div class="text-thirdColor"><i class="fa-sharp fa-solid fa-circle"></i></div>
-                        <h2 class="text-forthColor text-xl">third experience</h2>
+        <section id="portfolio" class="bg-firstColor gap-4 flex flex-col py-10 lg:py-20 md:py-20">
+            <div class="flex flex-row justify-center items-baseline gap-2">
+                <hr class="text-thirdColor w-12" />
+                <h1 class="my-text-shadow capitalize text-3xl text-thirdColor font-title-font lg:text-5xl">
+                    portfolio
+                </h1>
+                <hr class="text-thirdColor w-12" />
+            </div>
+            <div
+                class="flex flex-col md:items-baseline items-center gap-3 md:gap-7 lg:gap-1 w-screen lg:grid lg:grid-cols-4 lg:px-36 lg:pt-5 lg:justify-center md:flex md:flex-row md:px-10 md:pt-5 md:justify-center">
+                <div class="w-5/6 flex flex-col gap-3 mx-auto">
+                    <a href="/todo.html">
+                        <img src="./media/todo-task.png"
+                            class="my-shadow w-full lg:w-64 lg:cursor-pointer lg:hover:opacity-20" />
+                    </a>
+                    <div class="flex flex-col">
+                        <h3 class="text-forthColor text-xl text-center capitalize">todo list</h3>
+                        <a href="/todo.html" class=" text-thirdColor font-title-font underline pb-2 text-xl mx-auto">
+                            More details.
+                        </a>
                     </div>
                 </div>
-        </section>
-
-        <section class="bg-firstColor p-2 h-screen justify-center flex flex-col">
-            <h1 class="capitalize text-3xl text-forthColor text-center mt-3">contact me</h1>
-
-            <div class="flex flex-col items-center gap-3 mt-10">
-                <div class="bg-sixthColor flex flex-row gap-4 w-2/3 rounded-md h-fit p-2">
-                    <div class="text-forthColor"><i class="fa-regular fa-envelope"></i></i></div>
-                    <p class="text-thirdColor text-sm">bouunaas.meriem.1993@gmail.com</p>
+                <div class="w-5/6 flex flex-col gap-3 mx-auto">
+                    <a href="/weather.html">
+                        <img src="./media/weather.png"
+                            class="my-shadow w-full lg:w-64 lg:cursor-pointer lg:hover:opacity-20" />
+                    </a>
+                    <div class="flex flex-col">
+                        <h3 class="text-forthColor text-xl text-center capitalize">weather app</h3>
+                        <a href="/weather.html" class=" text-thirdColor font-title-font underline pb-2 text-xl mx-auto">
+                            More details.
+                        </a>
+                    </div>
                 </div>
-                <div class="bg-sixthColor flex flex-row gap-4 w-2/3 rounded-md h-fit p-2">
-                    <div class="text-forthColor"><i class="fa-solid fa-phone"></i></i></div>
-                    <p class="text-thirdColor">(+33) 744 158 690</p>
+                <div class=" w-5/6 flex flex-col gap-3 mx-auto">
+                    <a href="/weather.html">
+                        <img src="./media/weather.png"
+                            class="my-shadow w-full lg:w-64 lg:cursor-pointer lg:hover:opacity-20" />
+                    </a>
+                    <div class="flex flex-col">
+                        <h3 class="text-forthColor text-xl text-center capitalize">weather app</h3>
+                        <a href="/weather.html" class=" text-thirdColor font-title-font underline pb-2 text-xl mx-auto">
+                            More details.
+                        </a>
+                    </div>
                 </div>
-                <div class="bg-sixthColor flex flex-row gap-4 w-2/3 rounded-md h-fit p-2">
-                    <div class="text-forthColor"><i class="fa-solid fa-location-dot"></i></div>
-                    <p class="text-thirdColor">grenoble_france</p>
+                <div class=" w-5/6 flex flex-col gap-3 mx-auto">
+                    <a href="/weather.html">
+                        <img src="./media/weather.png"
+                            class="my-shadow w-full lg:w-64 lg:cursor-pointer lg:hover:opacity-20" />
+                    </a>
+                    <div class="flex flex-col">
+                        <h3 class="text-forthColor text-xl text-center capitalize">weather app</h3>
+                        <a href="/weather.html" class=" text-thirdColor font-title-font underline pb-2 text-xl mx-auto">
+                            More details.
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="flex flex-row items-baseline mt-12 justify-center ">
-                <hr class="text-forthColor w-full" />
-                <div class="flex flex-row  text-forthColor gap-5 ">
-                    <i class="fa-brands fa-twitter fa-xl"></i>
-                    <i class="fa-brands fa-whatsapp fa-xl"></i>
-                    <i class="fa-brands fa-linkedin-in fa-xl"></i>
-                    <i class="fa-brands fa-github fa-xl"></i>
-                </div>
-                <hr class="text-forthColor w-full" />
+        </section>
+
+        <section id="experience" class="bg-secondColor px-2 py-10 lg:pt-20 md:pt-20 lg:h-screen ">
+            <div class="flex flex-row justify-center items-baseline gap-2 mb-3">
+                <hr class="text-thirdColor w-12" />
+                <h1 class="my-text-shadow capitalize text-3xl text-thirdColor font-title-font lg:text-5xl">
+                    experience
+                </h1>
+                <hr class="text-thirdColor w-12" />
             </div>
-            <footer class="bg-firstColor">
-                <h2 class="text-fifthColor text-center p-3 text-sm">copyright</h2>
-            </footer>
+            <div class="flex flex-col w-full px-10 mt-10 gap-3 lg:grid lg:grid-cols-2 lg:w-11/12 lg:mx-auto">
+                <div class="lg:w-2/3 lg:mx-auto">
+                    <div class="flex flex-row gap-3 items-center">
+                        <button id="my-cercle" class="text-thirdColor"><i
+                                class="fa-sharp fa-solid fa-circle"></i></button>
+                        <h2 class="text-forthColor text-xl capitalize  font-font-text text-justify lg:text-2xl">
+                            professeur d'informatique
+                        </h2>
+                    </div>
+                    <div id="my-detail" class="px-2">
+                        <h1 class="text-forthColor text-xl text-justify pl-5">Collège Batna | jan 2018- juin 2018</h1>
+                        <ul class="text-fifthColor text-lg list-disc pl-5 text-justify lg:mb-10">
+                            <li>
+                                Programme officiel de ministère: Office, Scratch, Initiation au réseaux informatique
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-2/3 lg:mx-auto">
+                    <div class="flex flex-row gap-3 items-center">
+                        <button class="text-thirdColor"><i class="fa-sharp fa-solid fa-circle"></i></button>
+                        <h2 class="text-forthColor text-xl capitalize  font-font-text text-justify lg:text-2xl">
+                            developpeuse front end
+                        </h2>
+                    </div>
+                    <div class="px-2">
+                        <h1 class="text-forthColor text-xl text-justify pl-5">
+                            Revup, application web d'e-learning | Avril 2019- Aout 2019
+                        </h1>
+                        <ul class="text-fifthColor text-lg list-disc pl-5 text-justify lg:mb-10">
+                            <li>Création des UIs</li>
+                            <li>Testing et Correction des bugs frontend</li>
+                            <li>Pile tech : React, CSS3, Redux, React-route</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-2/3 lg:mx-auto">
+                    <div class="flex flex-row gap-3 items-center">
+                        <button class="text-thirdColor"><i class="fa-sharp fa-solid fa-circle"></i></button>
+                        <h2 class="text-forthColor text-xl capitalize  font-font-text text-justify lg:text-2xl">
+                            enseignante en technologie
+                        </h2>
+                    </div>
+                    <div class="px-2">
+                        <h1 class="text-forthColor text-xl text-justify pl-5">Devaco | Jan 2018- fév 2022</h1>
+                        <ul class="text-fifthColor text-lg list-disc pl-5 text-justify lg:mb-10">
+                            <li>Développement web frontend en utilisant HTML CSS JS</li>
+                            <li>Cours Arduin</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-2/3 lg:mx-auto">
+                    <div class="flex flex-row gap-3 items-center">
+                        <button class="text-thirdColor"><i class="fa-sharp fa-solid fa-circle"></i></button>
+                        <h2 class="text-forthColor text-xl capitalize  font-font-text text-justify lg:text-2xl">
+                            developpeuse front end
+                        </h2>
+                    </div>
+                    <div class="px-2">
+                        <h1 class="text-forthColor text-xl text-justify pl-5">
+                            Projet Freelance Espion Shopify | 2023
+                        </h1>
+                        <ul class="text-fifthColor text-lg list-disc pl-5 text-justify lg:mb-10">
+                            <li>
+                                Conception et création d'interface frontend pour un service de
+                                tracking des ventes et des prix des boutiques Shopify.
+                            </li>
+                            <li>
+                                Pile tech: React, SCSS, Git, React-Router
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="flex flex-col px-2">
+            <div class="bg-firstColor p-2 h-screen pt-36 flex flex-col lg:pt-20  lg:text-xl md:pt-20  md:text-xl">
+                <div class="flex flex-row justify-center items-baseline gap-2 mb-3">
+                    <hr class="text-thirdColor w-12" />
+                    <h1 class="my-text-shadow capitalize text-3xl text-thirdColor font-title-font lg:text-5xl">
+                        contact
+                    </h1>
+                    <hr class="text-thirdColor w-12" />
+                </div>
+
+                <div
+                    class="flex flex-col gap-3 mt-10 text-forthColor w-fit pl-10 lg:pl-0 lg:mx-auto md:pl-0 md:mx-auto">
+                    <div
+                        class=" flex flex-row gap-4 rounded-md h-fit p-2 lg:border-2 items-center lg:border-thirdColor lg:text-firstColor lg:font-title-font lg:bg-fifthColor lg:p-3 lg:hover:bg-thirdColor md:border-2 md:border-thirdColor md:text-firstColor md:font-title-font md:bg-fifthColor md:p-3 md:hover:bg-thirdColor">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>bouunaas.meriem.1993@gmail.com</p>
+                    </div>
+                    <div
+                        class="flex flex-row gap-4 rounded-md h-fit p-2 lg:border-2 items-center lg:border-thirdColor lg:text-firstColor lg:font-title-font lg:bg-fifthColor lg:p-3 lg:hover:bg-thirdColor md:border-2 md:border-thirdColor md:text-firstColor md:font-title-font md:bg-fifthColor md:p-3 md:hover:bg-thirdColor">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="capitalize"> grenoble_France</p>
+                    </div>
+                </div>
+                <iframe class="pt-5 mx-auto lg:h-1/2 lg:w-2/3 w-full h-52 md:w-2/3"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2812.1851196083785!2d5.727706215455189!3d45.183348779098644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478af49297073ec7%3A0x7a2b792e8f2c5a!2s10%20Bd%20Mar%C3%A9chal%20Joffre%2C%2038000%20Grenoble!5e0!3m2!1sfr!2sfr!4v1667310103958!5m2!1sfr!2sfr"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+                <div class="flex flex-row items-center mt-12 justify-center p-5 lg:mt-10 md:mt-36">
+                    <hr class="text-forthColor w-full" />
+                    <div class="flex flex-row  text-forthColor gap-5 px-3">
+                        <a href="https://twitter.com/MeriemBou93">
+                            <i class="fa-brands fa-twitter fa-xl hover:text-thirdColor cursor-pointer "></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/meriem-bounaas-a84171243/">
+                            <i class="fa-brands fa-linkedin-in fa-xl hover:text-thirdColor cursor-pointer "></i>
+                        </a>
+                        <a href="https://github.com/Meriem-Bounaas">
+                            <i class="fa-brands fa-github fa-xl hover:text-thirdColor cursor-pointer "></i>
+                        </a>
+                    </div>
+                    <hr class="text-forthColor w-full" />
+                </div>
+                <footer class="bg-firstColor ">
+                    <h2 class="text-fifthColor text-center p-3 text-sm capitalize"> made by meriem bounaas.
+                    </h2>
+                </footer>
+            </div>
         </section>
 
     </main>
-   
+
 
     <script src="index.js"></script>
 </body>

@@ -1,8 +1,19 @@
-// 1. Select the div element using the id property
-const app = document.getElementById("appzae");
-// 2. Create a new <p></p> element programmatically
-const p = document.createElement("p");
-// 3. Add the text content
-p.textContent = "Hello, World!";
-// 4. Append the p element to the div element
-app?.appendChild(p);
+const menuItems= document.getElementsByClassName('menu-item')
+const checkBox = document.getElementById('my-check-box')
+for (let i = 0; i < menuItems.length; i++) {
+    menuItems[i].addEventListener('click',()=>{
+        checkBox.checked = false
+    })
+    
+}
+
+const myDetail = document.getElementById('my-detail')
+const myExperience =  document.getElementById('my-cercle').addEventListener('click', ()=>{
+    if (myDetail.style.display !== "none") {
+        myDetail.style.display = "none";
+    } else {
+        myDetail.style.display = "block";
+    }
+})
+
+
