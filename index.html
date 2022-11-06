@@ -5,25 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Meriem Bounaas, web developer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="./fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet">
-    <link href="./fontawesome-free-6.2.0-web/css/all.css" rel="stylesheet">
-    <link href="./fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="shortcut icon" href="./media/logo.ico">
 </head>
 
 <body class="font-font-text bg-secondColor">
     <header>
         <nav
-            class="flex flex-row z-10 justify-between px-4 py-2 bg-firstColor fixed w-full opacity-95 md:h-14 md:fixed md:z-10 md:opacity-95 md:items-center">
-            <a href="#home"><img src="./media/logo.png" alt="logo" class="w-7" /></a>
+            class="flex flex-row z-10 md:px-20 justify-between px-4 py-2 bg-firstColor fixed w-full opacity-95 md:h-14 md:fixed md:z-10 md:opacity-95 md:items-center">
+            <a href="#home"><img src="./media/logo.png" alt="logo" class="w-9" /></a>
             <div class="navbar-container container block md:hidden">
                 <input type="checkbox" id="my-check-box" />
                 <div class="hamburger-lines">
@@ -35,18 +31,44 @@
                     <ul>
                         <li><a href="#home" class="capitalize menu-item font-title-font text-2xl">home</a></li>
                         <li><a href="#about" class="capitalize menu-item font-title-font text-2xl">about</a></li>
-                        <li><a href="#portfolio" class="capitalize menu-item font-title-font text-2xl">portfolio</a></li>
-                        <li><a href="#experience" class="capitalize menu-item font-title-font text-2xl">experience</a></li>
+                        <li><a href="#portfolio" class="capitalize menu-item font-title-font text-2xl">portfolio</a>
+                        </li>
+                        <li><a href="#experience" class="capitalize menu-item font-title-font text-2xl">experience</a>
+                        </li>
                         <li><a href="#contact" class="capitalize menu-item font-title-font text-2xl">contact me</a></li>
                     </ul>
                 </div>
             </div>
             <div class="hidden lg:block w-full md:block">
-                <ul class="my-text-shadow flex flex-row text-forthColor justify-center text-xl items-center md:gap-10">
-                    <li class="hover:text-thirdColor"><a href="#home" class="capitalize">home</a></li>
-                    <li class="hover:text-thirdColor"><a href="#about" class="capitalize">about</a></li>
-                    <li class="hover:text-thirdColor"><a href="#portfolio" class="capitalize">portfolio</a></li>
-                    <li class="hover:text-thirdColor"><a href="#experience" class="capitalize">experience</a></li>
+                <ul class="my-text-shadow flex flex-row text-forthColor justify-center text-xl items-center gap-10">
+                    <li class="pb-2 after:w-[100%] after:h-[1px] after:content-[''] relative after:bg-thirdColor after:bottom-0 \
+                               after:left-0 after:absolute after:rounded-md after:scale-x-0 after:origin-center after:transition-all \
+                               after:ease-in-out hover:after:scale-x-[1] hover:after:delay-300">
+                        <a href="#home" class="capitalize ">
+                            home
+                        </a>
+                    </li>
+                    <li class="pb-2 after:w-[100%] after:h-[1px] after:content-[''] relative after:bg-thirdColor after:bottom-0 \
+                    after:left-0 after:absolute after:rounded-md after:scale-x-0 after:origin-center after:transition-all \
+                    after:ease-in-out hover:after:scale-x-[1] hover:after:delay-300">
+                        <a href="#about" class="capitalize">
+                            about
+                        </a>
+                    </li>
+                    <li class="pb-2 after:w-[100%] after:h-[1px] after:content-[''] relative after:bg-thirdColor after:bottom-0 \
+                              after:left-0 after:absolute after:rounded-md after:scale-x-0 after:origin-center after:transition-all \
+                              after:ease-in-out hover:after:scale-x-[1] hover:after:delay-300">
+                        <a href="#portfolio" class="capitalize">
+                            portfolio
+                        </a>
+                    </li>
+                    <li class="pb-2 after:w-[100%] after:h-[1px] after:content-[''] relative after:bg-thirdColor after:bottom-0 \
+                               after:left-0 after:absolute after:rounded-md after:scale-x-0 after:origin-center after:transition-all \
+                               after:ease-in-out hover:after:scale-x-[1] hover:after:delay-300">
+                        <a href="#experience" class="capitalize">
+                            experience
+                        </a>
+                    </li>
                     <li class="hover:text-thirdColor lg:hidden md:block">
                         <a href="#contact" class="capitalize">contact</a>
                     </li>
@@ -56,46 +78,111 @@
     </header>
 
     <main class="flex flex-col">
-        <section id="home" class="bg-firstColor px-2 h-screen justify-center items-center flex flex-col gap-3">
-            <div class="flex flex-row px-7">
-                <div
-                    class=" absolute top-40 left-12 lg:top-52 lg:left-56 lg:absolute md:absolute md:top-32 md:left-60 lg:z-10">
-                    <p class="text-forthColor text-4xl text-center capitalize pb-4">hi ,</p>
-                    <p class="text-forthColor text-3xl capitalize lg:text-4xl md:text-3xl">i'm
-                        <span
-                            class="my-text-shadow text-thirdColor font-semibold text-3xl capitalize lg:text-5xl md:text-4xl">
-                            meriem bounaas
-                        </span>
-                    </p>
-                    <p
-                        class="capitalize text-forthColor text-2xl text-center pt-5 lg:text-5xl lg:mb-10 md:text-4xl md:mb-10">
-                        front end developper
-                    </p>
-                    <button
-                        class="hidden lg:block lg:bg-thirdColor lg:p-2 lg:rounded-md md:hidden lg:mx-auto md:mx-auto lg:hover:bg-sixthColor lg:hover:text-thirdColor lg:hover:border-2 lg:hover:border-thirdColor md:hover:bg-sixthColor md:hover:text-thirdColor md:hover:border-2 md:hover:border-thirdColor">
-                        <a href="#contact" class="capitalize font-title-font text-lg">contact me</a>
-                    </button>
-                </div>
-                <div class="absolute bottom-0 left-0 lg:left-auto lg:bottom-0 lg:w-1/2 md:w-1/2 md:left-60">
-                    <!-- <img src="./media/person1.png" alt="img" /> -->
-                </div>
-
-            </div>
+        <section id="home" class="bg-firstColor px-2 h-screen pt-52 items-center flex flex-col gap-3">
+            <p class="text-forthColor text-4xl text-center capitalize pb-4">hi ,</p>
+            <p class="text-forthColor text-3xl capitalize lg:text-4xl md:text-3xl">i'm
+                <span class="my-text-shadow text-thirdColor font-semibold text-3xl capitalize lg:text-5xl md:text-4xl">
+                    meriem bounaas
+                </span>
+            </p>
+            <p class="capitalize text-forthColor text-2xl text-center pt-5 lg:text-5xl lg:mb-10 md:text-4xl md:mb-10">
+                front end developper
+            </p>
+            <button class="hidden lg:block lg:bg-thirdColor lg:p-2 lg:rounded-full lg:px-9 md:hidden lg:mx-auto lg:relative border-thirdColor \
+                       border-2 lg:before:content-[''] lg:before:w-0 lg:before:h-full lg:before:bg-sixthColor lg:hover:before:w-full \
+                       lg:before:transition-all lg:before:duration-700 lg:before:absolute lg:before:left-0 lg:before:top-0 \
+                       lg:before:rounded-full lg:overflow-hidden  lg:z-[1] lg:before:z-[-1]  hover:text-thirdColor \
+                       hover:border-2 hover:border-thirdColor">
+                <a href="#contact" class="capitalize font-title-font text-lg lg:text-xl">contact me</a>
+            </button>
             <div
-                class="flex flex-col gap-14 lg:items-center md:items-center lg:absolute lg:bottom-56 lg:w-fit lg:left-80 md:gap-1 right-0 pr-5 bottom-28 absolute text-forthColor md:flex-row md:w-full md:absolute md:bottom-5 ">
-                <hr class="text-thirdColor w-14 rotate-90 lg:block lg:w-12 md:rotate-0 md:w-full" />
-                <div class="flex flex-col text-forthColor lg:gap-6 md:gap-5 gap-10 px-3 lg:flex-row md:flex-row ">
+                class="flex flex-col gap-14 md:items-center md:gap-1 md:w-full md:justify-center md:h-[10%] right-0 pr-5 bottom-28 absolute text-forthColor md:flex-row">
+                <hr class="w-14 rotate-90 lg:w-20 md:rotate-0 md:w-full" />
+                <div class="flex flex-col text-forthColor lg:gap-6 md:gap-5 gap-10 px-3 lg:flex-row md:flex-row">
                     <a href="https://twitter.com/MeriemBou93">
-                        <i class="fa-brands fa-twitter fa-xl hover:text-thirdColor cursor-pointer "></i>
+                        <i
+                            class="fab fa-twitter text-xl md:text-3xl hover:text-thirdColor cursor-pointer hover:duration-500"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/meriem-bounaas-a84171243/">
-                        <i class="fa-brands fa-linkedin-in fa-xl hover:text-thirdColor cursor-pointer "></i>
+                        <i
+                            class="fab fa-linkedin-in text-xl md:text-3xl hover:text-thirdColor cursor-pointer  hover:duration-500"></i>
                     </a>
                     <a href="https://github.com/Meriem-Bounaas">
-                        <i class="fa-brands fa-github fa-xl hover:text-thirdColor cursor-pointer "></i>
+                        <i
+                            class="fab fa-github text-xl md:text-3xl hover:text-thirdColor cursor-pointer  hover:duration-500"></i>
                     </a>
                 </div>
-                <hr class="lg:text-thirdColor lg:block lg:w-12 md:block md:text-thirdColor md:w-full hidden" />
+                <hr class="lg:w-20 md:block md:w-full hidden" />
+            </div>
+            <div class="lg:absolute lg:top-28 lg:right-20">
+                <button class="block lg:text-fifthColor p-2 rounded-full lg:px-9 mx-auto lg:relative lg:before:bg-thirdColor \
+                            lg:before:content-[''] lg:before:w-10 hover:text-firstColor lg:before:h-[90%]  lg:hover:before:w-full \
+                            lg:before:transition-all lg:before:duration-700 lg:before:absolute lg:before:left-[26px] lg:before:top-0 \
+                            lg:before:rounded-full lg:overflow-hidden lg:z-[1] lg:before:z-[-1] border-2 border-thirdColor lg:border-0 text-thirdColor \
+                ">
+                    <a href="./my-resume.pdf" download class="capitalize font-title-font text-lg">
+                        <i class="fas fa-arrow-right text-xl pl-1"></i>
+                        <span class="pl-2">Download Resume !</span>
+                    </a>
+                </button>
+            </div>
+
+
+            <div
+                class="hidden lg:absolute lg:grid lg:grid-cols-8 lg:right-20 lg:bottom-44 lg:w-28 lg:h-4 lg:flex-wrap lg:gap-3 lg:justify-between lg:animate-topbottom">
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full opacity-0"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full opacity-0"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full opacity-0"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full opacity-0"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full opacity-0"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full opacity-0"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full opacity-0"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full opacity-0"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full opacity-0"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full opacity-0"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full opacity-0"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full opacity-0"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
+                <div class="h-1 w-1 bg-thirdColor rounded-full"></div>
             </div>
         </section>
 
@@ -106,8 +193,9 @@
                 <hr class="text-thirdColor w-12" />
             </div>
             <p class="text-fifthColor px-7 text-justify text-sm lg:text-2xl lg:px-36">
-                Radhika Sanghani is an award-winning features journalist and influential body positivity campaigner. She
-                writes regularly for the Daily Telegraph, Daily Mail, Elle, Guardian, Grazia, Glamour and Cosmopolitan;
+                My name is Meriem bounaas, i'm a front end developer based in france, i have developed some types of
+                front-ends,
+                i'm passionate about beautiful interfaces,
 
             </p>
             <h1 class="my-text-shadow capitalize text-3xl text-thirdColor text-center mb-5 mt-10 font-title-font">
@@ -157,16 +245,18 @@
                         <div class="w-10 lg:w-20"><img src="./media/css.png" /></div>
                         <span class="capitalize text-forthColor lg:text-xl">css</span>
                     </div>
-
                     <div
                         class="h-25 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2 lg:h-36 lg:w-36">
                         <div class="w-10 lg:w-20"><img src="./media/tailwind.png" /></div>
                         <span class="capitalize text-forthColor lg:text-xl">tailwind</span>
                     </div>
+                    <div
+                        class="h-25 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2 lg:h-36 lg:w-36">
+                        <div class="w-10 lg:w-20"><img src="./media/firebase.svg" /></div>
+                        <span class="capitalize text-forthColor lg:text-xl">firebase</span>
+                    </div>
                 </div>
-
             </div>
-
         </section>
 
         <section id="portfolio" class="bg-firstColor gap-4 flex flex-col py-10 lg:py-20 md:py-20">
@@ -178,135 +268,237 @@
                 <hr class="text-thirdColor w-12" />
             </div>
             <div
-                class="flex flex-col md:items-baseline items-center gap-3 md:gap-7 lg:gap-1 w-screen lg:grid lg:grid-cols-4 lg:px-36 lg:pt-5 lg:justify-center md:flex md:flex-row md:px-10 md:pt-5 md:justify-center">
-                <div class="w-5/6 flex flex-col gap-3 mx-auto">
-                    <a href="/todo.html">
-                        <img src="./media/todo-task.png"
-                            class="my-shadow w-full lg:w-64 lg:cursor-pointer lg:hover:opacity-20" />
-                    </a>
-                    <div class="flex flex-col">
-                        <h3 class="text-forthColor text-xl text-center capitalize">todo list</h3>
-                        <a href="/todo.html" class=" text-thirdColor font-title-font underline pb-2 text-xl mx-auto">
-                            More details.
+                class="flex flex-col items-center gap-10 md:mt-10 px-10 lg:grid lg:grid-cols-2 lg:px-36 md:px-10 lg:justify-center">
+                <div class="my-shadow flex-col flex md:flex-row md:h-52 border-solid border-2 w-full">
+                    <div class="w-1/2 overflow-hidden">
+                        <a href="https://landing-page-psi-bay.vercel.app/" target="_blank">
+                            <img src="./media/landing.png" class="lg:cursor-pointer rounded-xl lg:hover:opacity-20 h-52 w-full" />
                         </a>
                     </div>
-                </div>
-                <div class="w-5/6 flex flex-col gap-3 mx-auto">
-                    <a href="/weather.html">
-                        <img src="./media/weather.png"
-                            class="my-shadow w-full lg:w-64 lg:cursor-pointer lg:hover:opacity-20" />
-                    </a>
-                    <div class="flex flex-col">
-                        <h3 class="text-forthColor text-xl text-center capitalize">weather app</h3>
-                        <a href="/weather.html" class=" text-thirdColor font-title-font underline pb-2 text-xl mx-auto">
-                            More details.
-                        </a>
+                    <div class="flex flex-col md:pl-2 w-full">
+                        <h3 class="text-center capitalize text-forthColor text-2xl pt-3">microgreens</h3>
+                        <p class="text-fifthColor text-lg">landing page </p>
+                        <div class="flex flex-col md:flex-row justify-between">
+                            <button class="w-fit py-1 px-4 mx-auto block bg-thirdColor md:p-2 rounded-full md:px-9 md:relative md:mx-auto border-thirdColor \
+                                    border-2 md:before:content-[''] md:before:w-0 md:before:h-full md:before:bg-sixthColor md:hover:before:w-full \
+                                    md:before:transition-all md:before:duration-700 md:before:absolute md:before:left-0 md:before:top-0 \
+                                    md:before:rounded-full md:overflow-hidden  md:z-[1] md:before:z-[-1]  hover:text-thirdColor \
+                                    md:hover:border-2 md:hover:border-thirdColor capitalize mb-3">
+                                <a href="https://landing-page-psi-bay.vercel.app/" target="_blank">show project</a>
+                            </button>
+                            <button class="w-fit py-1 px-4 mx-auto block bg-thirdColor md:p-2 rounded-full md:px-9 md:relative md:mx-auto border-thirdColor \
+                                    border-2 md:before:content-[''] md:before:w-0 md:before:h-full md:before:bg-sixthColor md:hover:before:w-full \
+                                    md:before:transition-all md:before:duration-700 md:before:absolute md:before:left-0 md:before:top-0 \
+                                    md:before:rounded-full md:overflow-hidden  md:z-[1] md:before:z-[-1]  hover:text-thirdColor \
+                                    md:hover:border-2 md:hover:border-thirdColor capitalize mb-3">
+                                <a href="https://github.com/Meriem-Bounaas/landing-page" target="_blank">source code</a>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class=" w-5/6 flex flex-col gap-3 mx-auto">
-                    <a href="/weather.html">
-                        <img src="./media/weather.png"
-                            class="my-shadow w-full lg:w-64 lg:cursor-pointer lg:hover:opacity-20" />
-                    </a>
-                    <div class="flex flex-col">
-                        <h3 class="text-forthColor text-xl text-center capitalize">weather app</h3>
-                        <a href="/weather.html" class=" text-thirdColor font-title-font underline pb-2 text-xl mx-auto">
-                            More details.
+
+                <div class="my-shadow flex flex-col md:flex-row md:h-56 border-solid border-2 w-full">
+                    <div class="w-1/2 overflow-hidden">
+                        <a href="https://fashion-trend.vercel.app/" target="_blank">
+                            <img src="./media/fashion.png" class="lg:cursor-pointer rounded-xl lg:hover:opacity-20 h-52 w-full" />
                         </a>
                     </div>
-                </div>
-                <div class=" w-5/6 flex flex-col gap-3 mx-auto">
-                    <a href="/weather.html">
-                        <img src="./media/weather.png"
-                            class="my-shadow w-full lg:w-64 lg:cursor-pointer lg:hover:opacity-20" />
-                    </a>
-                    <div class="flex flex-col">
-                        <h3 class="text-forthColor text-xl text-center capitalize">weather app</h3>
-                        <a href="/weather.html" class=" text-thirdColor font-title-font underline pb-2 text-xl mx-auto">
-                            More details.
-                        </a>
+                    <div class="flex flex-col md:pl-2 w-full">
+                        <h3 class="text-center capitalize text-forthColor text-2xl pt-3">fashion trend</h3>
+                        <p class="text-fifthColor text-lg">landing page </p>
+                        <div class="flex flex-col md:flex-row justify-between">
+                            <button class="w-fit py-1 px-4 mx-auto block bg-thirdColor md:p-2 rounded-full md:px-9 md:relative md:mx-auto border-thirdColor \
+                                    border-2 md:before:content-[''] md:before:w-0 md:before:h-full md:before:bg-sixthColor md:hover:before:w-full \
+                                    md:before:transition-all md:before:duration-700 md:before:absolute md:before:left-0 md:before:top-0 \
+                                    md:before:rounded-full md:overflow-hidden  md:z-[1] md:before:z-[-1]  hover:text-thirdColor \
+                                    md:hover:border-2 md:hover:border-thirdColor capitalize mb-3">
+                                <a href="https://fashion-trend.vercel.app/" target="_blank">show project</a>
+                            </button>
+                            <button class="w-fit py-1 px-4 mx-auto block bg-thirdColor md:p-2 rounded-full md:px-9 md:relative md:mx-auto border-thirdColor \
+                                    border-2 md:before:content-[''] md:before:w-0 md:before:h-full md:before:bg-sixthColor md:hover:before:w-full \
+                                    md:before:transition-all md:before:duration-700 md:before:absolute md:before:left-0 md:before:top-0 \
+                                    md:before:rounded-full md:overflow-hidden  md:z-[1] md:before:z-[-1]  hover:text-thirdColor \
+                                    md:hover:border-2 md:hover:border-thirdColor capitalize mb-3">
+                                <a href="https://github.com/Meriem-Bounaas/fashion-trend" target="_blank">source
+                                    code</a>
+                            </button>
+                        </div>
                     </div>
                 </div>
+
+                <div class="my-shadow flex flex-col md:flex-row md:h-56 border-solid border-2 w-full">
+                    <div class="w-1/2 overflow-hidden">
+                        <a href="https://calculator-vert-two.vercel.app/" target="_blank">
+                            <img src="./media/calculator.png"
+                                class="lg:cursor-pointer rounded-xl lg:hover:opacity-20 h-52 w-full" />
+                        </a>
+                    </div>
+                    <div class="flex flex-col md:pl-2 w-full">
+                        <h3 class="text-center capitalize text-forthColor text-2xl pt-3">calculator</h3>
+                        <p class="text-fifthColor text-lg">calculator appp </p>
+                        <div class="flex flex-col md:flex-row justify-between">
+                            <button class="w-fit py-1 px-4 mx-auto block bg-thirdColor md:p-2 rounded-full md:px-9 md:relative md:mx-auto border-thirdColor \
+                                    border-2 md:before:content-[''] md:before:w-0 md:before:h-full md:before:bg-sixthColor md:hover:before:w-full \
+                                    md:before:transition-all md:before:duration-700 md:before:absolute md:before:left-0 md:before:top-0 \
+                                    md:before:rounded-full md:overflow-hidden  md:z-[1] md:before:z-[-1]  hover:text-thirdColor \
+                                    md:hover:border-2 md:hover:border-thirdColor capitalize mb-3">
+                                <a href="https://calculator-vert-two.vercel.app/" target="_blank">show project</a>
+                            </button>
+                            <button class="w-fit py-1 px-4 mx-auto block bg-thirdColor md:p-2 rounded-full md:px-9 md:relative md:mx-auto border-thirdColor \
+                                    border-2 md:before:content-[''] md:before:w-0 md:before:h-full md:before:bg-sixthColor md:hover:before:w-full \
+                                    md:before:transition-all md:before:duration-700 md:before:absolute md:before:left-0 md:before:top-0 \
+                                    md:before:rounded-full md:overflow-hidden  md:z-[1] md:before:z-[-1]  hover:text-thirdColor \
+                                    md:hover:border-2 md:hover:border-thirdColor capitalize mb-3">
+                                <a href="https://github.com/Meriem-Bounaas/calculator.fcc" target="_blank">source
+                                    code</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-shadow flex flex-col md:flex-row md:h-56 border-solid border-2 w-full">
+                    <div class="w-1/2 overflow-hidden">
+                        <a href="https://todo-list-psi-ten.vercel.app/" target="_blank">
+                            <img src="./media/todo.png" class="lg:cursor-pointer rounded-xl lg:hover:opacity-20 h-52 w-full" />
+                        </a>
+                    </div>
+                    <div class="flex flex-col md:pl-2 w-full">
+                        <h3 class="text-center capitalize text-forthColor text-2xl pt-3">todo app</h3>
+                        <div class="text-fifthColor text-lg">
+                            <p>it helps you to manage your personal and professional productivity tasks</p> 
+                            <p>tech: react, redux, tailwind, firebase, i18n, react-router, react-hook-form</p>
+                        </div>
+                        <div class="flex flex-col md:flex-row justify-between">
+                            <button class="w-fit py-1 px-4 mx-auto block bg-thirdColor md:p-2 rounded-full md:px-9 md:relative md:mx-auto border-thirdColor \
+                                    border-2 md:before:content-[''] md:before:w-0 md:before:h-full md:before:bg-sixthColor md:hover:before:w-full \
+                                    md:before:transition-all md:before:duration-700 md:before:absolute md:before:left-0 md:before:top-0 \
+                                    md:before:rounded-full md:overflow-hidden  md:z-[1] md:before:z-[-1]  hover:text-thirdColor \
+                                    md:hover:border-2 md:hover:border-thirdColor capitalize mb-3">
+                                <a href="https://todo-list-psi-ten.vercel.app/" target="_blank">show project</a>
+                            </button>
+                            <button class="w-fit py-1 px-4 mx-auto block bg-thirdColor md:p-2 rounded-full md:px-9 md:relative md:mx-auto border-thirdColor \
+                                    border-2 md:before:content-[''] md:before:w-0 md:before:h-full md:before:bg-sixthColor md:hover:before:w-full \
+                                    md:before:transition-all md:before:duration-700 md:before:absolute md:before:left-0 md:before:top-0 \
+                                    md:before:rounded-full md:overflow-hidden  md:z-[1] md:before:z-[-1]  hover:text-thirdColor \
+                                    md:hover:border-2 md:hover:border-thirdColor capitalize mb-3">
+                                <a href="https://github.com/Meriem-Bounaas/todo-list" target="_blank">source code</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-shadow flex flex-col md:flex-row md:h-56 border-solid border-2 w-full">
+                    <div class="w-1/2 overflow-hidden">
+                        <a href="https://weather-iapv.vercel.app/" target="_blank">
+                            <img src="./media/weather.png" class="lg:cursor-pointer rounded-xl lg:hover:opacity-20 h-52 w-full" />
+                        </a>
+                    </div>
+                    <div class="flex flex-col md:pl-2 w-full">
+                        <h3 class="text-center capitalize text-forthColor text-2xl pt-3">weather app</h3>
+                        <div class="text-fifthColor text-lg">
+                            <p>today and a week forcasting app, uses a free weather api open-meteo.com.</p> 
+                            <p>tech: react, context-hook, tailwind, react-router</p>
+                        </div>
+                        <div class="flex flex-col md:flex-row justify-between">
+                            <button class="w-fit py-1 px-4 mx-auto block bg-thirdColor md:p-2 rounded-full md:px-9 md:relative md:mx-auto border-thirdColor \
+                                    border-2 md:before:content-[''] md:before:w-0 md:before:h-full md:before:bg-sixthColor md:hover:before:w-full \
+                                    md:before:transition-all md:before:duration-700 md:before:absolute md:before:left-0 md:before:top-0 \
+                                    md:before:rounded-full md:overflow-hidden  md:z-[1] md:before:z-[-1]  hover:text-thirdColor \
+                                    md:hover:border-2 md:hover:border-thirdColor capitalize mb-3">
+                                <a href="https://weather-iapv.vercel.app/" target="_blank">show project</a>
+                            </button>
+                            <button class="w-fit py-1 px-4 mx-auto block bg-thirdColor md:p-2 rounded-full md:px-9 md:relative md:mx-auto border-thirdColor \
+                                    border-2 md:before:content-[''] md:before:w-0 md:before:h-full md:before:bg-sixthColor md:hover:before:w-full \
+                                    md:before:transition-all md:before:duration-700 md:before:absolute md:before:left-0 md:before:top-0 \
+                                    md:before:rounded-full md:overflow-hidden  md:z-[1] md:before:z-[-1]  hover:text-thirdColor \
+                                    md:hover:border-2 md:hover:border-thirdColor capitalize mb-3">
+                                <a href="https://github.com/Meriem-Bounaas/Weather" target="_blank">source code</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <section id="experience" class="bg-secondColor px-2 py-10 lg:pt-20 md:pt-20 lg:h-screen ">
-            <div class="flex flex-row justify-center items-baseline gap-2 mb-3">
+        <section id="experience" class="bg-secondColor px-2 py-10 lg:pt-20 md:pt-20 md:mb-10">
+            <div class="flex flex-row justify-center items-baseline gap-2">
                 <hr class="text-thirdColor w-12" />
                 <h1 class="my-text-shadow capitalize text-3xl text-thirdColor font-title-font lg:text-5xl">
                     experience
                 </h1>
                 <hr class="text-thirdColor w-12" />
             </div>
-            <div class="flex flex-col w-full px-10 mt-10 gap-3 lg:grid lg:grid-cols-2 lg:w-11/12 lg:mx-auto">
-                <div class="lg:w-2/3 lg:mx-auto">
-                    <div class="flex flex-row gap-3 items-center">
-                        <button id="my-cercle" class="text-thirdColor"><i
-                                class="fa-sharp fa-solid fa-circle"></i></button>
+            <div class="flex flex-col w-full px-10 mt-10 gap-3 lg:items-center">
+                <div class=" md:w-1/2">
+                    <div class="flex flex-row gap-3 items-center ">
+                        <i class="fas fa-circle text-thirdColor"></i>
                         <h2 class="text-forthColor text-xl capitalize  font-font-text text-justify lg:text-2xl">
-                            professeur d'informatique
+                            computer teacher
                         </h2>
                     </div>
-                    <div id="my-detail" class="px-2">
-                        <h1 class="text-forthColor text-xl text-justify pl-5">Collège Batna | jan 2018- juin 2018</h1>
-                        <ul class="text-fifthColor text-lg list-disc pl-5 text-justify lg:mb-10">
+                    <h1 class="text-forthColor text-xl text-justify pl-7">Middle School Batna | jan 2018- june 2018</h1>
+                    <div class="px-2 border-l border-thirdColor border-solid pt-5 pb-10 ml-2">
+                        <ul class="text-fifthColor text-lg pl-2 text-justify">
+                            <p>
+                                Official Ministry Program: Office, Scratch, Introduction to computer networks.
+                            </p>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" md:w-1/2">
+                    <div class="flex flex-row gap-3 items-center">
+                        <i class="fas fa-circle text-thirdColor"></i>
+                        <h2 class="text-forthColor text-xl capitalize  font-font-text text-justify lg:text-2xl">
+                            front end developer
+                        </h2>
+                    </div>
+                    <h1 class="text-forthColor text-xl text-justify pl-7">
+                        Company Revup, e-learning web application | April 2019 à Aug 2019
+                    </h1>
+                    <div div class="px-2 border-l border-thirdColor border-solid pt-5 pb-10 ml-2">
+                        <ul class="text-fifthColor text-lg list-disc pl-5 text-justify">
+                            <li>Creation of UI</li>
+                            <li>Testing and fixing frontend bugs</li>
+                            <li>Tech stack : React, CSS3, Redux, React-route</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" md:w-1/2">
+                    <div class="flex flex-row gap-3 items-center">
+                        <i class="fas fa-circle text-thirdColor"></i>
+                        <h2 class="text-forthColor text-xl capitalize  font-font-text text-justify lg:text-2xl">
+                            technology teacher
+                        </h2>
+                    </div>
+                    <h1 class="text-forthColor text-xl text-justify pl-7">Company Devaco | Jan 2018- feb 2022</h1>
+                    <div div class="px-2 border-l border-thirdColor border-solid pt-5 pb-10 ml-2">
+                        <p class="text-fifthColor text-lg pl-1 mb-2">Teaching many groups
+                            of students in subjects such as :</p>
+                        <ul class="text-fifthColor text-lg list-disc pl-5 text-justify">
+                            <li>Frontend web development using: HTML, CSS, JS</li>
+                            <li>Arduino course</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" md:w-1/2">
+                    <div class="flex flex-row gap-3 items-center">
+                        <i class="fas fa-circle text-thirdColor"></i>
+                        <h2 class="text-forthColor text-xl capitalize  font-font-text text-justify lg:text-2xl">
+                            front end developer
+                        </h2>
+                    </div>
+                    <h1 class="text-forthColor text-xl text-justify pl-7">
+                        Freelance project Espion Shopify 'the comfy project | Aug 2022- Oct 2022
+                    </h1>
+                    <div div class="px-2 border-l border-thirdColor border-solid pt-5 pb-10 ml-2">
+                        <ul class="text-fifthColor text-lg list-disc pl-5 text-justify">
                             <li>
-                                Programme officiel de ministère: Office, Scratch, Initiation au réseaux informatique
+                                Design and creation of frontend interface for a service of
+                                Shopify store sales and price tracking.
                             </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="lg:w-2/3 lg:mx-auto">
-                    <div class="flex flex-row gap-3 items-center">
-                        <button class="text-thirdColor"><i class="fa-sharp fa-solid fa-circle"></i></button>
-                        <h2 class="text-forthColor text-xl capitalize  font-font-text text-justify lg:text-2xl">
-                            developpeuse front end
-                        </h2>
-                    </div>
-                    <div class="px-2">
-                        <h1 class="text-forthColor text-xl text-justify pl-5">
-                            Revup, application web d'e-learning | Avril 2019- Aout 2019
-                        </h1>
-                        <ul class="text-fifthColor text-lg list-disc pl-5 text-justify lg:mb-10">
-                            <li>Création des UIs</li>
-                            <li>Testing et Correction des bugs frontend</li>
-                            <li>Pile tech : React, CSS3, Redux, React-route</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="lg:w-2/3 lg:mx-auto">
-                    <div class="flex flex-row gap-3 items-center">
-                        <button class="text-thirdColor"><i class="fa-sharp fa-solid fa-circle"></i></button>
-                        <h2 class="text-forthColor text-xl capitalize  font-font-text text-justify lg:text-2xl">
-                            enseignante en technologie
-                        </h2>
-                    </div>
-                    <div class="px-2">
-                        <h1 class="text-forthColor text-xl text-justify pl-5">Devaco | Jan 2018- fév 2022</h1>
-                        <ul class="text-fifthColor text-lg list-disc pl-5 text-justify lg:mb-10">
-                            <li>Développement web frontend en utilisant HTML CSS JS</li>
-                            <li>Cours Arduin</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="lg:w-2/3 lg:mx-auto">
-                    <div class="flex flex-row gap-3 items-center">
-                        <button class="text-thirdColor"><i class="fa-sharp fa-solid fa-circle"></i></button>
-                        <h2 class="text-forthColor text-xl capitalize  font-font-text text-justify lg:text-2xl">
-                            developpeuse front end
-                        </h2>
-                    </div>
-                    <div class="px-2">
-                        <h1 class="text-forthColor text-xl text-justify pl-5">
-                            Projet Freelance Espion Shopify | 2023
-                        </h1>
-                        <ul class="text-fifthColor text-lg list-disc pl-5 text-justify lg:mb-10">
                             <li>
-                                Conception et création d'interface frontend pour un service de
-                                tracking des ventes et des prix des boutiques Shopify.
-                            </li>
-                            <li>
-                                Pile tech: React, SCSS, Git, React-Router
+                                Tech stack: React, SCSS, Git, React-Router
                             </li>
                         </ul>
                     </div>
@@ -328,32 +520,34 @@
                     class="flex flex-col gap-3 mt-10 text-forthColor w-fit pl-10 lg:pl-0 lg:mx-auto md:pl-0 md:mx-auto">
                     <div
                         class=" flex flex-row gap-4 rounded-md h-fit p-2 lg:border-2 items-center lg:border-thirdColor lg:text-firstColor lg:font-title-font lg:bg-fifthColor lg:p-3 lg:hover:bg-thirdColor md:border-2 md:border-thirdColor md:text-firstColor md:font-title-font md:bg-fifthColor md:p-3 md:hover:bg-thirdColor">
-                        <i class="fa-regular fa-envelope"></i>
-                        <p>bouunaas.meriem.1993@gmail.com</p>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:bouunaas.meriem.1993@gmail.com">bouunaas.meriem.1993@gmail.com</a>
                     </div>
                     <div
                         class="flex flex-row gap-4 rounded-md h-fit p-2 lg:border-2 items-center lg:border-thirdColor lg:text-firstColor lg:font-title-font lg:bg-fifthColor lg:p-3 lg:hover:bg-thirdColor md:border-2 md:border-thirdColor md:text-firstColor md:font-title-font md:bg-fifthColor md:p-3 md:hover:bg-thirdColor">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <p class="capitalize"> grenoble_France</p>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p class="capitalize"> grenoble - France</p>
                     </div>
                 </div>
-                <iframe class="pt-5 mx-auto lg:h-1/2 lg:w-2/3 w-full h-52 md:w-2/3"
+                <iframe class="pt-5  lg:h-1/2  w-full h-52 "
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2812.1851196083785!2d5.727706215455189!3d45.183348779098644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478af49297073ec7%3A0x7a2b792e8f2c5a!2s10%20Bd%20Mar%C3%A9chal%20Joffre%2C%2038000%20Grenoble!5e0!3m2!1sfr!2sfr!4v1667310103958!5m2!1sfr!2sfr"
-                    style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
 
                 <div class="flex flex-row items-center mt-12 justify-center p-5 lg:mt-10 md:mt-36">
                     <hr class="text-forthColor w-full" />
                     <div class="flex flex-row  text-forthColor gap-5 px-3">
                         <a href="https://twitter.com/MeriemBou93">
-                            <i class="fa-brands fa-twitter fa-xl hover:text-thirdColor cursor-pointer "></i>
+                            <i
+                                class="fab fa-twitter text-xl md:text-3xl hover:text-thirdColor cursor-pointer hover:duration-500"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/meriem-bounaas-a84171243/">
-                            <i class="fa-brands fa-linkedin-in fa-xl hover:text-thirdColor cursor-pointer "></i>
+                            <i
+                                class="fab fa-linkedin-in text-xl md:text-3xl hover:text-thirdColor cursor-pointer hover:duration-500"></i>
                         </a>
                         <a href="https://github.com/Meriem-Bounaas">
-                            <i class="fa-brands fa-github fa-xl hover:text-thirdColor cursor-pointer "></i>
+                            <i
+                                class="fab fa-github text-xl md:text-3xl hover:text-thirdColor cursor-pointer hover:duration-500"></i>
                         </a>
                     </div>
                     <hr class="text-forthColor w-full" />
@@ -366,8 +560,6 @@
         </section>
 
     </main>
-
-
     <script src="index.js"></script>
 </body>
 
