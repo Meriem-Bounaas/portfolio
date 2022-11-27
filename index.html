@@ -79,13 +79,13 @@
 
     <main class="flex flex-col">
         <section id="home" class="bg-firstColor px-2 h-screen pt-52 items-center flex flex-col gap-3">
-            <p class="text-forthColor text-4xl text-center capitalize pb-4">hi ,</p>
-            <p class="text-forthColor text-3xl capitalize lg:text-4xl md:text-3xl">i'm
-                <span class="my-text-shadow text-thirdColor font-semibold text-3xl capitalize lg:text-5xl md:text-4xl">
+            <p class="text-forthColor text-3xl text-center capitalize pb-4"></p>
+            <p class="text-forthColor text-3xl capitalize md:text-4xl">hi , i'm
+                <span class="my-text-shadow text-thirdColor font-semibold text-3xl capitalize md:text-4xl">
                     meriem bounaas
                 </span>
             </p>
-            <p class="capitalize text-forthColor text-2xl text-center pt-5 lg:text-5xl lg:mb-10 md:text-4xl md:mb-10">
+            <p class="capitalize text-forthColor text-2xl text-center pt-5 lg:mb-10 md:text-3xl md:mb-10">
                 front end developper
             </p>
             <button class="hidden lg:block lg:bg-thirdColor lg:p-2 lg:rounded-full lg:px-9 md:hidden lg:mx-auto lg:relative border-thirdColor \
@@ -116,7 +116,7 @@
             </div>
             <div class="lg:absolute lg:top-28 lg:right-20">
                 <button class="block lg:text-fifthColor p-2 rounded-full lg:px-9 mx-auto lg:relative lg:before:bg-thirdColor \
-                            lg:before:content-[''] lg:before:w-10 hover:text-firstColor lg:before:h-[90%]  lg:hover:before:w-full \
+                            lg:before:content-[''] lg:before:w-10 lg:hover:text-firstColor lg:before:h-[90%]  lg:hover:before:w-full \
                             lg:before:transition-all lg:before:duration-700 lg:before:absolute lg:before:left-[26px] lg:before:top-0 \
                             lg:before:rounded-full lg:overflow-hidden lg:z-[1] lg:before:z-[-1] border-2 border-thirdColor lg:border-0 text-thirdColor \
                 ">
@@ -186,21 +186,25 @@
             </div>
         </section>
 
-        <section id="about" class="bg-secondColor px-2 h-screen py-10 lg:pt-20 md:pt-20">
+        <section id="about" class="bg-secondColor px-2 py-12 md:pt-20">
             <div class="flex flex-row justify-center items-baseline gap-2 mb-3">
                 <hr class="text-thirdColor w-12" />
                 <h1 class="my-text-shadow capitalize text-3xl text-thirdColor font-title-font lg:text-5xl">about</h1>
                 <hr class="text-thirdColor w-12" />
             </div>
-            <p class="text-fifthColor px-7 text-justify text-sm lg:text-2xl lg:px-36">
-                My name is Meriem bounaas, i'm a front end developer based in france, i have developed some types of
-                front-ends,
-                i'm passionate about beautiful interfaces,
-
+            <p class="text-fifthColor px-7 text-justify text-sm lg:text-2xl lg:px-36 pb-10">
+                Hey! My name is Meriem bounaas, I'm a front end developper based in france,
+                I like to code things from scratch, and enjoy bringing ideas to life in the browser.
+                i currently work like freelancy.
+                I aspire toward a career that will allow me to channel my creativity through crafting beautiful software
+                and engaging experiences.
+                </br>
+                When I'm not on the computer, I enjoy sewing, swimming, and cooking.
+                </br>
+                </br>
+                Here are a few technologies I’ve been working with recently:
             </p>
-            <h1 class="my-text-shadow capitalize text-3xl text-thirdColor text-center mb-5 mt-10 font-title-font">
-                my skills
-            </h1>
+
             <div class="px-7 py-3 flex flex-col lg:gap-10 gap-3">
                 <div class="lg:flex lg:flex-row lg:gap-10 lg:justify-center grid grid-cols-2 gap-3 ">
                     <div
@@ -226,7 +230,7 @@
                     <div
                         class="h-20 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2 lg:h-36 lg:w-36">
                         <div class="w-10 lg:w-20"><img src="./media/html.png" /></div>
-                        <span class="capitalize text-forthColor lg:text-xl">html</span>
+                        <span class="capitalize text-forthColor lg:text-xl">html 5</span>
                     </div>
                     <div
                         class="h-25 bg-sixthColor flex rounded-md flex-col items-center justify-between p-2 lg:h-36 lg:w-36 lg:hidden">
@@ -259,7 +263,7 @@
             </div>
         </section>
 
-        <section id="portfolio" class="bg-firstColor gap-4 flex flex-col py-10 lg:py-20 md:py-20">
+        <section id="portfolio" class="bg-firstColor gap-4 flex flex-col py-12 md:py-20">
             <div class="flex flex-row justify-center items-baseline gap-2">
                 <hr class="text-thirdColor w-12" />
                 <h1 class="my-text-shadow capitalize text-3xl text-thirdColor font-title-font lg:text-5xl">
@@ -267,161 +271,96 @@
                 </h1>
                 <hr class="text-thirdColor w-12" />
             </div>
-            <div
-                class="flex flex-col items-center gap-10 md:mt-10 px-10 lg:grid lg:grid-cols-2 lg:px-36 md:px-10 lg:justify-center">
-                <div class="my-shadow flex-col flex md:flex-row md:h-52 border-solid border-2 w-full">
-                    <div class="w-1/2 overflow-hidden">
+
+            <div class="flex flex-col items-center gap-10 md:mt-10 px-10 lg:px-44 md:px-10">
+                <div class=" flex-col flex md:flex-row items-center">
+                    <div class="w-[80%]">
                         <a href="https://landing-page-psi-bay.vercel.app/" target="_blank">
-                            <img src="./media/landing.png" class="lg:cursor-pointer rounded-xl lg:hover:opacity-20 h-52 w-full" />
+                            <img src="./media/landing.png" class="lg:cursor-pointer rounded-lg lg:hover:opacity-20" />
                         </a>
                     </div>
-                    <div class="flex flex-col md:pl-2 w-full">
-                        <h3 class="text-center capitalize text-forthColor text-2xl pt-3">microgreens</h3>
-                        <p class="text-fifthColor text-lg">landing page </p>
-                        <div class="flex flex-col md:flex-row justify-between">
-                            <button class="w-fit py-1 px-4 mx-auto block bg-thirdColor md:p-2 rounded-full md:px-9 md:relative md:mx-auto border-thirdColor \
-                                    border-2 md:before:content-[''] md:before:w-0 md:before:h-full md:before:bg-sixthColor md:hover:before:w-full \
-                                    md:before:transition-all md:before:duration-700 md:before:absolute md:before:left-0 md:before:top-0 \
-                                    md:before:rounded-full md:overflow-hidden  md:z-[1] md:before:z-[-1]  hover:text-thirdColor \
-                                    md:hover:border-2 md:hover:border-thirdColor capitalize mb-3">
-                                <a href="https://landing-page-psi-bay.vercel.app/" target="_blank">show project</a>
-                            </button>
-                            <button class="w-fit py-1 px-4 mx-auto block bg-thirdColor md:p-2 rounded-full md:px-9 md:relative md:mx-auto border-thirdColor \
-                                    border-2 md:before:content-[''] md:before:w-0 md:before:h-full md:before:bg-sixthColor md:hover:before:w-full \
-                                    md:before:transition-all md:before:duration-700 md:before:absolute md:before:left-0 md:before:top-0 \
-                                    md:before:rounded-full md:overflow-hidden  md:z-[1] md:before:z-[-1]  hover:text-thirdColor \
-                                    md:hover:border-2 md:hover:border-thirdColor capitalize mb-3">
-                                <a href="https://github.com/Meriem-Bounaas/landing-page" target="_blank">source code</a>
-                            </button>
+                    <div class="flex flex-col w-full justify-between items-center">
+                        <div class="md:w-3/4">
+                            <h3 class="text-center capitalize text-forthColor text-2xl pt-3 md:pt-5">microgreens</h3>
+                            </br>
+                            <p class="text-fifthColor text-lg md:ml-10 md:text-xl">microgreens is a landing page , it's
+                                simple in both copy and design, inspired by drible </p>
                         </div>
+                        <button class="w-fit py-1 px-4 mx-auto block bg-thirdColor md:p-2 rounded-full md:px-4 md:relative md:mx-auto border-thirdColor \
+                                    border-2 md:before:content-[''] md:before:w-0 md:before:h-full md:before:bg-sixthColor md:hover:before:w-full \
+                                    md:before:transition-all md:before:duration-700 md:before:absolute md:before:left-0 md:before:top-0 \
+                                    md:before:rounded-full md:overflow-hidden  md:z-[1] md:before:z-[-1]  hover:text-thirdColor \
+                                    md:hover:border-2 md:hover:border-thirdColor capitalize mb-3 mt-10">
+                            <a href="https://landing-page-psi-bay.vercel.app/" target="_blank">show project</a>
+                        </button>
                     </div>
                 </div>
 
-                <div class="my-shadow flex flex-col md:flex-row md:h-56 border-solid border-2 w-full">
-                    <div class="w-1/2 overflow-hidden">
-                        <a href="https://fashion-trend.vercel.app/" target="_blank">
-                            <img src="./media/fashion.png" class="lg:cursor-pointer rounded-xl lg:hover:opacity-20 h-52 w-full" />
-                        </a>
-                    </div>
-                    <div class="flex flex-col md:pl-2 w-full">
-                        <h3 class="text-center capitalize text-forthColor text-2xl pt-3">fashion trend</h3>
-                        <p class="text-fifthColor text-lg">landing page </p>
-                        <div class="flex flex-col md:flex-row justify-between">
-                            <button class="w-fit py-1 px-4 mx-auto block bg-thirdColor md:p-2 rounded-full md:px-9 md:relative md:mx-auto border-thirdColor \
-                                    border-2 md:before:content-[''] md:before:w-0 md:before:h-full md:before:bg-sixthColor md:hover:before:w-full \
-                                    md:before:transition-all md:before:duration-700 md:before:absolute md:before:left-0 md:before:top-0 \
-                                    md:before:rounded-full md:overflow-hidden  md:z-[1] md:before:z-[-1]  hover:text-thirdColor \
-                                    md:hover:border-2 md:hover:border-thirdColor capitalize mb-3">
-                                <a href="https://fashion-trend.vercel.app/" target="_blank">show project</a>
-                            </button>
-                            <button class="w-fit py-1 px-4 mx-auto block bg-thirdColor md:p-2 rounded-full md:px-9 md:relative md:mx-auto border-thirdColor \
-                                    border-2 md:before:content-[''] md:before:w-0 md:before:h-full md:before:bg-sixthColor md:hover:before:w-full \
-                                    md:before:transition-all md:before:duration-700 md:before:absolute md:before:left-0 md:before:top-0 \
-                                    md:before:rounded-full md:overflow-hidden  md:z-[1] md:before:z-[-1]  hover:text-thirdColor \
-                                    md:hover:border-2 md:hover:border-thirdColor capitalize mb-3">
-                                <a href="https://github.com/Meriem-Bounaas/fashion-trend" target="_blank">source
-                                    code</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="my-shadow flex flex-col md:flex-row md:h-56 border-solid border-2 w-full">
-                    <div class="w-1/2 overflow-hidden">
-                        <a href="https://calculator-vert-two.vercel.app/" target="_blank">
-                            <img src="./media/calculator.png"
-                                class="lg:cursor-pointer rounded-xl lg:hover:opacity-20 h-52 w-full" />
-                        </a>
-                    </div>
-                    <div class="flex flex-col md:pl-2 w-full">
-                        <h3 class="text-center capitalize text-forthColor text-2xl pt-3">calculator</h3>
-                        <p class="text-fifthColor text-lg">calculator appp </p>
-                        <div class="flex flex-col md:flex-row justify-between">
-                            <button class="w-fit py-1 px-4 mx-auto block bg-thirdColor md:p-2 rounded-full md:px-9 md:relative md:mx-auto border-thirdColor \
-                                    border-2 md:before:content-[''] md:before:w-0 md:before:h-full md:before:bg-sixthColor md:hover:before:w-full \
-                                    md:before:transition-all md:before:duration-700 md:before:absolute md:before:left-0 md:before:top-0 \
-                                    md:before:rounded-full md:overflow-hidden  md:z-[1] md:before:z-[-1]  hover:text-thirdColor \
-                                    md:hover:border-2 md:hover:border-thirdColor capitalize mb-3">
-                                <a href="https://calculator-vert-two.vercel.app/" target="_blank">show project</a>
-                            </button>
-                            <button class="w-fit py-1 px-4 mx-auto block bg-thirdColor md:p-2 rounded-full md:px-9 md:relative md:mx-auto border-thirdColor \
-                                    border-2 md:before:content-[''] md:before:w-0 md:before:h-full md:before:bg-sixthColor md:hover:before:w-full \
-                                    md:before:transition-all md:before:duration-700 md:before:absolute md:before:left-0 md:before:top-0 \
-                                    md:before:rounded-full md:overflow-hidden  md:z-[1] md:before:z-[-1]  hover:text-thirdColor \
-                                    md:hover:border-2 md:hover:border-thirdColor capitalize mb-3">
-                                <a href="https://github.com/Meriem-Bounaas/calculator.fcc" target="_blank">source
-                                    code</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="my-shadow flex flex-col md:flex-row md:h-56 border-solid border-2 w-full">
-                    <div class="w-1/2 overflow-hidden">
+                <div class=" flex-col flex md:flex-row items-center">
+                    <div class="w-[80%]">
                         <a href="https://todo-list-psi-ten.vercel.app/" target="_blank">
-                            <img src="./media/todo.png" class="lg:cursor-pointer rounded-xl lg:hover:opacity-20 h-52 w-full" />
+                            <img src="./media/todo-task.png"
+                                class="lg:cursor-pointer rounded-lg lg:hover:opacity-20 " />
                         </a>
                     </div>
-                    <div class="flex flex-col md:pl-2 w-full">
-                        <h3 class="text-center capitalize text-forthColor text-2xl pt-3">todo app</h3>
-                        <div class="text-fifthColor text-lg">
-                            <p>it helps you to manage your personal and professional productivity tasks</p> 
-                            <p>tech: react, redux, tailwind, firebase, i18n, react-router, react-hook-form</p>
+                    <div class="flex flex-col w-full justify-between items-center">
+                        <div class="md:w-3/4">
+                            <h3 class="text-center capitalize text-forthColor text-2xl pt-3 md:pt-5">TickThings</h3>
+                            </br>
+                            <p class="text-fifthColor text-lg md:ml-10 md:text-xl">TickThings application: it helps you
+                                to manage your personal and professional productivity tasks.</p>
                         </div>
-                        <div class="flex flex-col md:flex-row justify-between">
-                            <button class="w-fit py-1 px-4 mx-auto block bg-thirdColor md:p-2 rounded-full md:px-9 md:relative md:mx-auto border-thirdColor \
+                            <button class="w-fit py-1 px-4 mx-auto block bg-thirdColor md:p-2 rounded-full md:px-4 md:relative md:mx-auto border-thirdColor \
                                     border-2 md:before:content-[''] md:before:w-0 md:before:h-full md:before:bg-sixthColor md:hover:before:w-full \
                                     md:before:transition-all md:before:duration-700 md:before:absolute md:before:left-0 md:before:top-0 \
                                     md:before:rounded-full md:overflow-hidden  md:z-[1] md:before:z-[-1]  hover:text-thirdColor \
-                                    md:hover:border-2 md:hover:border-thirdColor capitalize mb-3">
+                                    md:hover:border-2 md:hover:border-thirdColor capitalize mb-3 mt-10">
                                 <a href="https://todo-list-psi-ten.vercel.app/" target="_blank">show project</a>
                             </button>
-                            <button class="w-fit py-1 px-4 mx-auto block bg-thirdColor md:p-2 rounded-full md:px-9 md:relative md:mx-auto border-thirdColor \
-                                    border-2 md:before:content-[''] md:before:w-0 md:before:h-full md:before:bg-sixthColor md:hover:before:w-full \
-                                    md:before:transition-all md:before:duration-700 md:before:absolute md:before:left-0 md:before:top-0 \
-                                    md:before:rounded-full md:overflow-hidden  md:z-[1] md:before:z-[-1]  hover:text-thirdColor \
-                                    md:hover:border-2 md:hover:border-thirdColor capitalize mb-3">
-                                <a href="https://github.com/Meriem-Bounaas/todo-list" target="_blank">source code</a>
-                            </button>
+                    </div>
+                </div>
+
+                <div class=" flex-col flex md:flex-row items-center">
+                    <div class="w-[80%]">
+                        <img src="./media/Temps real.PNG" class="rounded-lg" />
+                    </div>
+                    <div class="flex flex-col w-full justify-between items-center">
+                        <div class="md:w-3/4">
+                            <h3 class="text-center capitalize text-forthColor text-2xl pt-3 md:pt-5">Comfy</h3>
+                            </br>
+                            <p class="text-fifthColor text-lg md:ml-10 md:text-xl">the comfy project ,
+                                Espion Shopify, a tool that track product sales in a collection of shopify stores</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="my-shadow flex flex-col md:flex-row md:h-56 border-solid border-2 w-full">
-                    <div class="w-1/2 overflow-hidden">
+                <div class=" flex-col flex md:flex-row items-center">
+                    <div class="w-[80%]">
                         <a href="https://weather-iapv.vercel.app/" target="_blank">
-                            <img src="./media/weather.png" class="lg:cursor-pointer rounded-xl lg:hover:opacity-20 h-52 w-full" />
+                            <img src="./media/weather.png" class="lg:cursor-pointer rounded-lg lg:hover:opacity-20 " />
                         </a>
                     </div>
-                    <div class="flex flex-col md:pl-2 w-full">
-                        <h3 class="text-center capitalize text-forthColor text-2xl pt-3">weather app</h3>
-                        <div class="text-fifthColor text-lg">
-                            <p>today and a week forcasting app, uses a free weather api open-meteo.com.</p> 
-                            <p>tech: react, context-hook, tailwind, react-router</p>
+                    <div class="flex flex-col w-full justify-between items-center">
+                        <div class="md:w-3/4">
+                            <h3 class="text-center capitalize text-forthColor text-2xl pt-3 md:pt-5">Météo daily</h3>
+                            </br>
+                            <p class="text-fifthColor text-lg md:ml-10 md:text-xl">Météo daily : a Weather application,
+                                today
+                                and a week forcasting app, uses a free weather api open-meteo.com.</p>
                         </div>
-                        <div class="flex flex-col md:flex-row justify-between">
-                            <button class="w-fit py-1 px-4 mx-auto block bg-thirdColor md:p-2 rounded-full md:px-9 md:relative md:mx-auto border-thirdColor \
+                            <button class="w-fit py-1 px-4 mx-auto block bg-thirdColor md:p-2 rounded-full md:px-4 md:relative md:mx-auto border-thirdColor \
                                     border-2 md:before:content-[''] md:before:w-0 md:before:h-full md:before:bg-sixthColor md:hover:before:w-full \
                                     md:before:transition-all md:before:duration-700 md:before:absolute md:before:left-0 md:before:top-0 \
                                     md:before:rounded-full md:overflow-hidden  md:z-[1] md:before:z-[-1]  hover:text-thirdColor \
-                                    md:hover:border-2 md:hover:border-thirdColor capitalize mb-3">
+                                    md:hover:border-2 md:hover:border-thirdColor capitalize mb-3 mt-10">
                                 <a href="https://weather-iapv.vercel.app/" target="_blank">show project</a>
                             </button>
-                            <button class="w-fit py-1 px-4 mx-auto block bg-thirdColor md:p-2 rounded-full md:px-9 md:relative md:mx-auto border-thirdColor \
-                                    border-2 md:before:content-[''] md:before:w-0 md:before:h-full md:before:bg-sixthColor md:hover:before:w-full \
-                                    md:before:transition-all md:before:duration-700 md:before:absolute md:before:left-0 md:before:top-0 \
-                                    md:before:rounded-full md:overflow-hidden  md:z-[1] md:before:z-[-1]  hover:text-thirdColor \
-                                    md:hover:border-2 md:hover:border-thirdColor capitalize mb-3">
-                                <a href="https://github.com/Meriem-Bounaas/Weather" target="_blank">source code</a>
-                            </button>
-                        </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <section id="experience" class="bg-secondColor px-2 py-10 lg:pt-20 md:pt-20 md:mb-10">
+        <section id="experience" class="bg-secondColor px-2 py-12 lg:pt-20 md:pt-20 md:mb-10">
             <div class="flex flex-row justify-center items-baseline gap-2">
                 <hr class="text-thirdColor w-12" />
                 <h1 class="my-text-shadow capitalize text-3xl text-thirdColor font-title-font lg:text-5xl">
@@ -430,7 +369,7 @@
                 <hr class="text-thirdColor w-12" />
             </div>
             <div class="flex flex-col w-full px-10 mt-10 gap-3 lg:items-center">
-                <div class=" md:w-1/2">
+                <div class="md:w-1/2">
                     <div class="flex flex-row gap-3 items-center ">
                         <i class="fas fa-circle text-thirdColor"></i>
                         <h2 class="text-forthColor text-xl capitalize  font-font-text text-justify lg:text-2xl">
@@ -553,7 +492,8 @@
                     <hr class="text-forthColor w-full" />
                 </div>
                 <footer class="bg-firstColor ">
-                    <h2 class="text-fifthColor text-center p-3 text-sm capitalize"> made by meriem bounaas.
+                    <h2 class="text-fifthColor text-center p-3 text-sm capitalize"> <i class="fas fa-copyright"></i>
+                        meriem bounaas 2022.
                     </h2>
                 </footer>
             </div>
